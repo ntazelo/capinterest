@@ -2,15 +2,16 @@ import { useState } from 'react';
 
 import './Category.css';
 
-const Category = () => {
+const Category = (props) => {
   const [category, setCategory] = useState('');
+  const { Onfilter } = { ...props };
   const getCategoryHandler = (e) => {
     setCategory(e.target.value);
   };
 
   const fetchCategory = (e) => {
     e.preventDefault();
-    console.log(category);
+    Onfilter(category);
   };
 
   return (
@@ -20,13 +21,13 @@ const Category = () => {
       </p>
       <form className="form-control" onSubmit={fetchCategory}>
         <select name="category" className="category-input" value={category} onChange={getCategoryHandler} required>
-          <option value="">Category</option>
-          <option value="sport">sports</option>
-          <option value="thriller">computer</option>
-          <option value="romance">music</option>
-          <option value="action">food</option>
-          <option value="horror">animals</option>
-          <option value="horror"> fashion</option>
+          <option value="category">Category</option>
+          <option value="sports">sports</option>
+          <option value="computer">computer</option>
+          <option value="music">music</option>
+          <option value="food">food</option>
+          <option value="animals">animals</option>
+          <option value="fashion">fashion</option>
         </select>
         <button type="submit" className="btn-book">Add book</button>
       </form>
