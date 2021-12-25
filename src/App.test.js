@@ -4,7 +4,7 @@ import { BrowserRouter } from 'react-router-dom';
 import { act } from 'react-dom/test-utils';
 import pretty from 'pretty';
 import { Provider } from 'react-redux';
-import store from './redux/configureStore';
+import store from './redux/ConfigureStore';
 import App from './App';
 
 let container = null;
