@@ -38,6 +38,8 @@ const fetchAll = () => async (dispatch) => {
     type: GET_CATEGORY,
     payload,
   });
+
+  return [];
 };
 
 export default fetchAll;

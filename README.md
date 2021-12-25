@@ -10,6 +10,10 @@ Hi Everyone! I'm Ntazama Eloi here I built a Capinterest app.It is a mini clone 
 - Javascript
 - Html
 
+# live demo
+
+[Heruko's live demo ](https://shielded-fjord-15048.herokuapp.com/)
+
 # Getting Started
 
 If you're new to GitHub and just want to download the capinterest app, press the green button saying "Code", and then choose the "Download ZIP" option or clone it locally using this command : **git clone https://github.com/ntazelo/capinterest.git** 
