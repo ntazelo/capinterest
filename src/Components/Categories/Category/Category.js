@@ -29,7 +29,7 @@ const Category = (props) => {
           <option value="animals">animals</option>
           <option value="fashion">fashion</option>
         </select>
-        <button type="submit" className="btn-book">Add book</button>
+        <button type="submit" className="btn-book">Category</button>
       </form>
     </section>
   );

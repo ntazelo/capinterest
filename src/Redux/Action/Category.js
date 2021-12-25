@@ -40,18 +40,4 @@ const fetchAll = () => async (dispatch) => {
   });
 };
 
-/* export const filterCategory = (data, category) => {
-  let filtered;
-  if (category === 'category') {
-    filtered = data;
-  } else {
-    filtered = data.filter((cat) => cat.category === category);
-  }
-
-  return {
-    type: FILTER_CATEGORY,
-    payload: filtered,
-  };
-}; */
-
 export default fetchAll;

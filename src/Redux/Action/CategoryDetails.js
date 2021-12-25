@@ -1,10 +1,20 @@
-/* export const fetchDetails = () => async (dispatch) => {
-  const music = fetch(fetchUrl('music'));
+import fetchUrl, { CATEGORY_DETAILS } from './ActionType';
 
-  const Categories = await Promise.all([music, sports, food, animals, fashion, computer]);
-  console.log(Categories);
+const fetchDetails = (categ) => async (dispatch) => {
+  const data = await fetch(fetchUrl(categ));
+
+  const obj = await data.json();
+  const payload = obj.hits.map((category) => ({
+    category: category.tags,
+    count: category.likes,
+    image: category.largeImageURL,
+    id: category.id,
+  }));
+
   dispatch({
-    type: GET_CATEGORY,
-    payload: Categories,
+    type: CATEGORY_DETAILS,
+    payload,
   });
-}; */
+};
+
+export default fetchDetails;

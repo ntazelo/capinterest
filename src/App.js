@@ -1,16 +1,18 @@
+import { Route, Routes } from 'react-router-dom';
 import Header from './Components/Header/Header';
 import Categories from './Components/Categories/Categories';
-import Intro from './Components/Intro/Intro';
+import CategoryDetails from './Components/CategoryDetails/CategoryDetails';
 import './App.css';
 
 function App() {
   return (
-    <>
+    <div>
       <Header />
-      <Intro />
-      <Categories />
-    </>
-
+      <Routes>
+        <Route path="/" element={<Categories />} />
+        <Route path="/:name" element={<CategoryDetails />} />
+      </Routes>
+    </div>
   );
 }
 

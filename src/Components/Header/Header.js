@@ -1,11 +1,12 @@
+import { Link } from 'react-router-dom';
 import './Header.css';
 
 const Header = () => (
   <header className="navigation-cont">
-    <a href="/" className="back-link-cont">
+    <Link to="/" className="back-link-cont">
       <i className="fas fa-chevron-left" />
       <span className="link-hint">Menu</span>
-    </a>
+    </Link>
     <span className="on-page-hint">Category</span>
     <nav className="icons-cont">
       <ul className="icons-list-wrapper">

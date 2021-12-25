@@ -1,7 +1,6 @@
 .filter-cont {
   display: flex;
   justify-content: space-between;
-  background-color: #0290ff;
 }
 
 .form-control {
@@ -40,6 +39,8 @@
   border: none;
   font-size: 1.2rem;
   cursor: pointer;
+  border-radius: 8px;
+  margin: 0 0.5rem;
 }
 
 .indic-sect {
