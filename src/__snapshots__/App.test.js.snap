@@ -29,7 +29,7 @@ exports[`testing the app testing HomePage UI 1`] = `
         <option value=\\"food\\">food</option>
         <option value=\\"animals\\">animals</option>
         <option value=\\"fashion\\">fashion</option>
-      </select><button type=\\"submit\\" class=\\"btn-book\\">Add book</button></form>
+      </select><button type=\\"submit\\" class=\\"btn-book\\">Category</button></form>
   </section>
   <section class=\\"categories-cont\\"></section>
 </div>"

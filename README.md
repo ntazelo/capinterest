@@ -34,7 +34,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Thanks to [https://www.behance.net/sakwadesignstudio](https://www.behance.net/sakwadesignstudio) for the design.
+- Thanks to [Nelsn Sakwa](https://www.behance.net/sakwadesignstudio) for the design.
 
 - Thanks to Microverse and Microverse community.
 
